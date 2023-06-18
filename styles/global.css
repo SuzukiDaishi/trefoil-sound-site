@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    order: 0;
+    overflow: hidden;
+}
+
+html {
+	overflow: hidden;
+}
+
+body {
+	overflow: hidden;
+	min-width: 900px;
+    font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+    color: #333;
+}
+
+.contaner {
+    width: min(100% - 2rem, 640px);
+    margin-inline: auto;
+    padding-top: 2em;
+}
+
+.card {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px!important;
+    position:relative;
+    overflow: hidden;
+    margin-block: .5em;
+}
+
+.card div {
+    width: 80%;
+    margin: 20px;
+}
+
+.card p {
+    white-space: pre-wrap;
+}
+
+.card ul {
+    margin-block: .25em;
+}
+
+.card button {
+    border-radius: 30px;
+    padding: .3em 1em;
+    font-size: 20px;
+    margin-top: 1em;
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+    color: white;
+    background-color: aquamarine;
+}
+
+.card button:hover {
+    color: aquamarine;
+    background-color: transparent;
+    border-width: 2px;
+}

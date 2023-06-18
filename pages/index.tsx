@@ -1,13 +1,25 @@
-import Link from 'next/link'
+import { useRef } from 'react'
 import Layout from '../components/Layout'
+import Image from 'next/image'
 
-const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
-    <h1>Hello Next.js 👋</h1>
-    <p>
-      <Link href="/about">About</Link>
-    </p>
-  </Layout>
-)
+import styles from 'styles/Index.module.css'
+
+const IndexPage = () => {
+  const imageWrapper = useRef<HTMLDivElement>()
+
+  return (
+    <Layout title="Home | トレフォイルサウンド">
+      <div ref={imageWrapper} className={styles.image_wrapper}>
+        <Image 
+          src={'/mitsuba.svg'}
+          alt='クローバー'
+          fill={true}
+          className={styles.mitsuba}
+        />
+        <p>トレフォイル<br/>サウンド</p>
+      </div>
+    </Layout>
+  )
+}
 
 export default IndexPage

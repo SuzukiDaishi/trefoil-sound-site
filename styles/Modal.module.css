@@ -1,0 +1,26 @@
+.background {
+    background-color: rgba(0, 0, 0, .8);
+    backdrop-filter: blur(12px);
+    position: fixed!important; 
+    top: 0!important;
+    left: 0!important;
+    width: 100vw!important;
+    height: 100vh!important;
+    padding: 0!important;
+    margin: 0!important;
+}
+
+.card {
+    position: fixed;
+    border-radius: 20px;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    height: 80vh;
+    z-index: 200;
+    padding-inline: 4em;
+    padding-top: 2em;
+    overflow-y: scroll;
+}
