@@ -1,9 +1,6 @@
-import React, { ReactNode, useState, useEffect } from 'react'
-import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next'
+import React, { ReactNode } from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
-
-import { client, type MemberRes } from '../libs/client'
 
 import styles from 'styles/Layout.module.css'
 

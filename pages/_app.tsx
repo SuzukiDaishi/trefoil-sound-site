@@ -3,7 +3,7 @@ import Head from 'next/head'
 
 import 'styles/global.css'
 
-const App = ({ Component, pageProps }: AppProps) => (
+const App = ({ Component, pageProps}: AppProps) => (
   <>
     <Head>
       <title />

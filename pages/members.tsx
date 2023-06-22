@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import Link from 'next/link'
 import { client, type MemberRes } from '../libs/client'
 import Layout from '../components/Layout'
 import Modal from '../components/Modal'
@@ -28,7 +27,7 @@ type Props = {
 const MembersPage = (props: Props) => {
 
   const [memberList, setMemberList] = useState(<></>)
-  const [isModal, setIsModal] = useState(false)
+  const [isModal, setIsModal] = useState<number | null>(null)
 
   useEffect(() => {
     setMemberList(() => {
@@ -50,10 +49,10 @@ const MembersPage = (props: Props) => {
                 ))
               }
             </ul>
-            <button onClick={() => setIsModal(v => !v)}>
+            <button onClick={() => setIsModal(v => idx)}>
               <b>Works</b>
             </button>
-            <Modal htmlText={v.works} display={isModal} closeEvent={(b) => setIsModal(b) }/>
+            <Modal htmlText={v.works} display={isModal == idx} closeEvent={() => setIsModal(null) }/>
           </div>
         </div>
       ))
